@@ -1,0 +1,7 @@
+<h1>게시글 목록</h1>
+<% @posts.each do |post| %>
+  <p><%= post.title %></p>
+  <% end %>
+  <a href="/posts/new">새 게시물 추가</a>
+
+  <!-- each는 반복문임. if문이랑 each문은 꼭 end로 닫아야 함 -->

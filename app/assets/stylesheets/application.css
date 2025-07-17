@@ -1,0 +1,13 @@
+/* 모든 전역의 html 요소에 대한 스타일을 적용하는 일종의 index.css 같은 역할을 함 */
+
+h1 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
