@@ -1,5 +1,11 @@
 /* 모든 전역의 html 요소에 대한 스타일을 적용하는 일종의 index.css 같은 역할을 함 */
 
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
 h1 {
   color: red;
 }
