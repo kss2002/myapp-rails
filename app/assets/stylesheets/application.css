@@ -1,4 +1,5 @@
 /* 모든 전역의 html 요소에 대한 스타일을 적용하는 일종의 index.css 같은 역할을 함 */
+@import 'posts';
 
 html,
 body {
@@ -7,14 +8,82 @@ body {
 }
 
 h1 {
-  color: brown;
   text-align: center;
 }
 
-p {
-  color: blue;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-a {
-  text-decoration: none;
+.post-index-title {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  width: 80%;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.post-index-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.post-index-edit-link {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+.post-index-delete-button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #e53935;
+  }
+}
+
+.post-index-link {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #0056b3;
+  }
 }
