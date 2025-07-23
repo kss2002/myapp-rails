@@ -1,7 +1,22 @@
 <h1>게시글 목록</h1>
 <% @posts.each do |post| %>
-  <p><%= post.title %></p>
+  <%= link_to post_path(post), class:'post-index-title' do %>
+    <%= post.id %>.
+    <%= post.title %>
+    <br>
+    <%= post.content %>
   <% end %>
-  <a href="/posts/new">새 게시물 추가</a>
+
+  <div class="post-index-actions">
+    <button class='post-index-edit-link'>
+      <%= link_to "수정", edit_post_path(post) %>
+    </button>
+    <button class='post-index-delete-button'>
+      <%= button_to "삭제", post_path(post), method: :delete, data: { confirm: "정말 삭제하시겠습니까?" } %>
+    </button>
+  </div>
+  <% end %>
+
+  <%= link_to "새 게시물 추가", new_post_path, class: "post-index-link" %>
 
   <!-- each는 반복문임. if문이랑 each문은 꼭 end로 닫아야 함 -->
