@@ -2,13 +2,23 @@
 
 ## 루비온레일즈 설치 밎 서버 실행
 
+레일즈 프로젝트 만들기
+
 ```bash
 rails new myapp
 ```
 
+레일즈 서버 시작
+
 ```bash
 cd my app (디렉토리 체인지)
 rails s
+```
+
+레일즈 콘솔 스타트
+
+```bash
+rails c
 ```
 
 ## README
