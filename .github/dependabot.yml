@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: bundler
+    directory: '/'
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: capybara
+      - dependency-name: selenium-webdriver
+      - dependency-name: debug
+      - dependency-name: brakeman
+      - dependency-name: rubocop-rails-omakase
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: actions/checkout
+      - dependency-name: ruby/setup-ruby
+      - dependency-name: actions/upload-artifact
